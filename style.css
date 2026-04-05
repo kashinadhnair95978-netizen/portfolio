@@ -91,7 +91,7 @@ section p {
 .typing-text span { position: relative; }
 
 .typing-text span::before {
-    content: "Web Developer";
+    content: "software developer";
     color: #8B0000;
     animation: words 20s infinite;
 }
@@ -105,6 +105,9 @@ section p {
     border-left: 3px solid black;
     right: -8px;
     animation: cursor 0.6s infinite;
+}
+@keyframes words {
+    0%,  100% { content: "Software Developer"; }
 }
 .social-icons a {
     display: inline-flex;
