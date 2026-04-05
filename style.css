@@ -107,7 +107,8 @@ section p {
     animation: cursor 0.6s infinite;
 }
 @keyframes words {
-    0%,  100% { content: "Software Developer"; }
+    0%,  50% { content: "Software Developer"; }
+    51%, 100% { content: "Web Developer"; }
 }
 .social-icons a {
     display: inline-flex;
