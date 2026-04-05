@@ -91,7 +91,7 @@ section p {
 .typing-text span { position: relative; }
 
 .typing-text span::before {
-    content: "software developer";
+    content: "Software Developer";
     color: #8B0000;
     animation: words 20s infinite;
 }
