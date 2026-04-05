@@ -82,9 +82,7 @@ section p {
 .home-img img:hover { box-shadow: 0 0 50px #8B0000; }
 
 .home-content h1 { font-size: 6rem; font-weight: 700; line-height: 1.3; }
-
 .home-content h3 { font-size: 4rem; font-weight: 700; margin-bottom: 1rem; }
-
 .home-content p { font-size: 1.6rem; color: white; }
 
 /* TYPING ANIMATION */
@@ -93,7 +91,7 @@ section p {
 .typing-text span::before {
     content: "Software Developer";
     color: #8B0000;
-    animation: words 20s infinite;
+    animation: words 4s infinite;
 }
 
 .typing-text span::after {
@@ -106,9 +104,17 @@ section p {
     right: -8px;
     animation: cursor 0.6s infinite;
 }
-@keyframes words {
-    0%,  100% { content: "Software Developer"; }
+
+@keyframes cursor {
+    to { border-left: 3px solid #8B0000; }
 }
+
+@keyframes words {
+    0%,  50% { content: "Software Developer"; }
+    51%, 100% { content: "Web Developer"; }
+}
+
+/* SOCIAL ICONS */
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -129,6 +135,8 @@ section p {
     transform: scale(1.3) translateY(-5px);
     box-shadow: 0 0 25px #8B0000;
 }
+
+/* BUTTON */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -145,9 +153,12 @@ section p {
 
 .btn:hover { background: #8B0000; color: black; box-shadow: 0 0 25px #8B0000; }
 
+/* SECTION BACKGROUNDS */
 #services, #projects { background: #0a0a0a; }
 #skills, #contact    { background: #111; }
 #education           { background: black; }
+
+/* FOOTER */
 footer {
     background: #0a0a0a;
     border-top: 2px solid #8B0000;
@@ -157,11 +168,10 @@ footer {
 }
 
 footer p { color: #aaa; margin-bottom: 1rem; }
-
 footer a { color: white; margin: 0 0.5rem; transition: 0.3s; }
-
 footer a:hover { color: #8B0000; }
 
+/* RESPONSIVE */
 @media (max-width: 995px) {
     nav { display: none; }
     .home { flex-direction: column; padding-top: 14rem; gap: 4rem; }
