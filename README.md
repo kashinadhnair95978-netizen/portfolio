@@ -9,4 +9,4 @@ A personal portfolio website built with HTML and CSS.
 - HTML5, CSS3, Font Awesome
 
 ## Live Link
-https://github.com/kashinadhnair95978-netizen/portfolio
+https://kashinadhnair95978-netizen.github.io/portfolio/
